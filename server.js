@@ -39,13 +39,13 @@ app.post('/charge', (req, res) => {
             // save customer to db here if we want
             stripe.charges.create({
                 amount: req.body.amount,
-                description: 'Donation to ' + config.appName,
+                description: 'Donation to freecodecamp.org',
                 receipt_email: customer.email,
                 currency: 'usd',
                 customer: customer.id,
                 metadata: {
                     donation: true,
-                    source: config.appURL
+                    source: 'freecodecamp.org'
                 }
             }))
         .then(charge => res.send(charge))
