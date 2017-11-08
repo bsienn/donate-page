@@ -85,12 +85,11 @@ function handleDonate (state, emitter) {
       locale: 'auto'
     })
     checkoutHandler.open({
-      name: 'Code for Science & Society',
-      description: `$${state.checkout.amount/100} Donation to Dat Project`,
+      name: 'app name',
+      description: `$${state.checkout.amount/100} Donation to app name`,
       image: 'images/dat-logo.svg',
       token: handleCharge,
       panelLabel: 'Donate',
-      bitcoin: true,
       amount: state.checkout.amount,
       billingAddress: true,
       closed: function () {

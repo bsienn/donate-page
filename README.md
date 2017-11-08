@@ -1,18 +1,11 @@
-# donate-css
-
-donate page for code for science & society
+# Donation page
 
 Features:
 
 * Donate via Stripe
 * Simple express server to handle payments
 
-## Development
-
-* `npm run dev` to run server and watch client javascript files + rebuild automatically
-* `npm start` to build and run server for production
-
-### Config
+## Config
 
 Copy the config file to `config.yml`:
 
@@ -20,12 +13,25 @@ Copy the config file to `config.yml`:
 cp example.config.yml config.yml
 ```
 
-And set your stripe keys. You can also set the stripe keys as environment variables:
+Set paramaters in config or can also set them as environment variables.
+
+And set your stripe keys.:
 
 ```
 process.env.SECRET_KEY
 process.env.PUBLISHABLE_KEY
 ```
+
+And set your app name & URL:
+
+```
+process.env.APP_NAME
+process.env.APP_URL
+```
+## Development
+
+* `npm run dev` to run server and watch client javascript files + rebuild automatically
+* `npm start` to build and run server for production
 
 ## License
 

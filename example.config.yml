@@ -1,4 +1,4 @@
 port: 8080
 stripe:
-  keyPublishable: 'stripe_key'
-  keySecret: 'stripe_secret_key'
+  publicKey: 'stripe_key'
+  secretKey: 'stripe_secret_key'

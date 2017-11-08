@@ -26,13 +26,5 @@
   "devDependencies": {
     "bankai": "^8.1.1",
     "standard": "*"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/joehand/donate-css.git"
-  },
-  "bugs": {
-    "url": "https://github.com/joehand/donate-css/issues"
-  },
-  "homepage": "https://github.com/joehand/donate-css"
+  }
 }
