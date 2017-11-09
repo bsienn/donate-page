@@ -86,11 +86,10 @@ function handleDonate(state, emitter) {
         checkoutHandler.open({
             name: 'freecodecamp.org',
             description: `$${state.checkout.amount/100} Donation`,
-            image: 'images/dat-logo.svg',
+            image: 'images/logo.png',
             token: handleCharge,
-            panelLabel: 'Donate',
+            panelLabel: 'Donate {{amount}} monthly',
             amount: state.checkout.amount,
-            billingAddress: true,
             closed: function () {
                 if (!state.checkout.chargePending) {
                     state.checkout.pending = false
