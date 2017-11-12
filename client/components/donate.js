@@ -45,13 +45,13 @@ function donateView (state, emit) {
   function donateButtons () {
     const staticButtons = html`
         <ul id="select_amount">
-            <li><a href="javascript:;" onclick=${() => { emit('checkout', 3000) }} class="btn btn-default thar-three btn-block">$3</a></li>
-            <li><a href="javascript:;" onclick=${() => { emit('checkout', 5000) }} class="btn btn-default thar-three btn-block">$5</a></li>
-            <li><a href="javascript:;" onclick=${() => { emit('checkout', 10000) }} class="btn btn-default thar-three btn-block">$10</a></li>
-            <li><a href="javascript:;" onclick=${() => { emit('checkout', 20000) }} class="btn btn-default thar-three btn-block">$20</a></li>
-            <li><a href="javascript:;" onclick=${() => { emit('checkout', 30000) }} class="btn btn-default thar-three btn-block">$30</a></li>
-            <li><a href="javascript:;" onclick=${() => { emit('checkout', 50000) }} class="btn btn-default thar-three btn-block">$50</a></li>
-            <li><a href="javascript:;" onclick=${() => { emit('checkout', 10000) }} class="btn btn-default thar-three btn-block">$100</a></li>
+            <li><a href="javascript:;" onclick=${() => { emit('checkout', 300) }} class="btn btn-default thar-three btn-block">$3</a></li>
+            <li><a href="javascript:;" onclick=${() => { emit('checkout', 500) }} class="btn btn-default thar-three btn-block">$5</a></li>
+            <li><a href="javascript:;" onclick=${() => { emit('checkout', 1000) }} class="btn btn-default thar-three btn-block">$10</a></li>
+            <li><a href="javascript:;" onclick=${() => { emit('checkout', 2000) }} class="btn btn-default thar-three btn-block">$20</a></li>
+            <li><a href="javascript:;" onclick=${() => { emit('checkout', 3000) }} class="btn btn-default thar-three btn-block">$30</a></li>
+            <li><a href="javascript:;" onclick=${() => { emit('checkout', 5000) }} class="btn btn-default thar-three btn-block">$50</a></li>
+            <li><a href="javascript:;" onclick=${() => { emit('checkout', 1000) }} class="btn btn-default thar-three btn-block">$100</a></li>
             <li><a href="javascript:;" onclick=${() => { emit('toggleValInput')}} class="btn btn-default thar-three btn-block">Other</a></li>
         </ul>
     `
