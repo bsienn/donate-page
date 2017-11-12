@@ -86,7 +86,7 @@ function handleDonate(state, emitter) {
         checkoutHandler.open({
             name: 'freecodecamp.org',
             description: `$${state.checkout.amount/100} Donation`,
-            image: 'images/logo.png',
+            image: 'images/logo.jpg',
             token: handleCharge,
             panelLabel: 'Donate {{amount}} monthly',
             amount: state.checkout.amount,
